@@ -12,7 +12,7 @@ import { MenuItem, PrimeNGConfig } from 'primeng/api';
 })
 export class MenuComponent implements OnInit {
 
-  visibleSidebar: boolean = false;
+  visibleSidebar: boolean = true;
 
   constructor( private primengConfig: PrimeNGConfig ) { }
 

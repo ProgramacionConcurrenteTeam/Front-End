@@ -1,5 +1,5 @@
-<p-sidebar [(visible)]="visibleSidebar" [baseZIndex]="10000">
-  <h1 style="font-weight:normal">Left Sidebar</h1>
+<p-sidebar [(visible)]="visibleSidebar" [baseZIndex]="10000" position="left" [style]="{ width:'15em' }" [transitionOptions]="'200ms'">
+  <h1 style="font-weight:normal">DataCov</h1>
   <p-button type="button" (click)="visibleSidebar = false" label="Save" styleClass="p-button-success"></p-button>
   <p-button type="button" (click)="visibleSidebar = false" label="Cancel" styleClass="p-button-secondary"></p-button>
 </p-sidebar>
