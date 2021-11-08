@@ -2,13 +2,12 @@ import { NgModule } from '@angular/core';
 
 // PrimeNg: ordenar los modulos alfabeticamente
 import { ButtonModule } from 'primeng/button';
-import { MenuModule } from 'primeng/menu';
-
+import { SidebarModule } from 'primeng/sidebar';
 
 @NgModule({
   exports: [
     ButtonModule,
-    MenuModule
+    SidebarModule
   ]
 })
 export class PrimeNgModule { }
