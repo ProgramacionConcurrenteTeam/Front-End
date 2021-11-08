@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem, PrimeNGConfig } from 'primeng/api';
 
 
 
@@ -12,26 +12,15 @@ import { MenuItem } from 'primeng/api';
 })
 export class MenuComponent implements OnInit {
 
-  items!: MenuItem[];
+  visibleSidebar: boolean = true;
 
-  constructor() { }
+  constructor( private primengConfig: PrimeNGConfig ) { }
 
   ngOnInit(): void {
-    this.items = [
-      {
-        label: 'New',
-        icon: 'pi pi-fw pi-plus'
-      },
-      {
-        label: 'Open',
-        icon: 'pi pi-fw pi-download'
-      },
-      {
-        label: 'Undo',
-        icon: 'pi pi-fw pi-refresh'
-      }
-    ];
-
+    this.primengConfig.ripple = true;
   }
 
+  hideSideBar() {
+    this.visibleSidebar = !this.visibleSidebar;
+  }
 }
