@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
-
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -19,7 +19,8 @@ export class MenuComponent implements OnInit {
 
   visibleSidebar: boolean = true;
 
-  constructor( private primengConfig: PrimeNGConfig ) { }
+  constructor( private router: Router,
+    private primengConfig: PrimeNGConfig ) { }
 
   ngOnInit(): void {
     this.primengConfig.ripple = true;
@@ -28,4 +29,21 @@ export class MenuComponent implements OnInit {
   hideSideBar() {
     this.visibleSidebar = !this.visibleSidebar;
   }
+
+  goToDashboard() {
+    this.hideSideBar();
+    this.router.navigate(['./dashboards']);
+  }
+
+  goToLogin() {
+    this.hideSideBar();
+    this.router.navigate(['./login']);
+  }
+
+  goToRegister() {
+    this.hideSideBar();
+    this.router.navigate(['./register']);
+  }
+
+
 }
