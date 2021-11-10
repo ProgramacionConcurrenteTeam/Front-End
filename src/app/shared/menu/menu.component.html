@@ -1,7 +1,26 @@
 <p-sidebar [(visible)]="visibleSidebar" [baseZIndex]="10000" position="left" [style]="{ width:'15em' }" [transitionOptions]="'200ms'">
   <h1 style="font-weight:normal">DataCov</h1>
-  <p-button type="button" (click)="visibleSidebar = false" label="Save" styleClass="p-button-success"></p-button>
-  <p-button type="button" (click)="visibleSidebar = false" label="Cancel" styleClass="p-button-secondary"></p-button>
+
+  <!-- <div class="button">
+    <a href="">Dashboard</a>
+  </div> -->
+
+  <div class="grid">
+
+    <button class="col-12 p-button-primary" pButton
+            type="button"
+            (click)="visibleSidebar = false"
+            label="Dashboard">
+    </button>
+
+    <button class="col-12 p-button-primary" pButton
+            type="button"
+            (click)="visibleSidebar = false"
+            label="Login">
+    </button>
+
+  </div>
+
 </p-sidebar>
 
 <button pButton

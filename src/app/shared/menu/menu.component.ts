@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, PrimeNGConfig } from 'primeng/api';
+import { PrimeNGConfig } from 'primeng/api';
 
 
 
@@ -7,6 +7,11 @@ import { MenuItem, PrimeNGConfig } from 'primeng/api';
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styles: [`
+
+    button {
+      margin-bottom: 10px;
+    }
+
   `
   ]
 })
