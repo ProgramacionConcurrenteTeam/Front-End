@@ -3,13 +3,18 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
-  styles: [
+  styleUrls: ["sign-up-component.css"
   ]
 })
 export class SignUpComponent implements OnInit {
-
+  email!: string;
+  password!: string;
+  confirmPassword!: string;
   constructor() { }
-
+  register() {
+    console.log(this.email);
+    console.log(this.password);
+  }
   ngOnInit(): void {
   }
 

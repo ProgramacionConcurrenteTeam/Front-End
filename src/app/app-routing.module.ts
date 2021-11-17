@@ -12,19 +12,23 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component: DashboardComponent,
+    component: DashboardComponent
+   ,pathMatch:"full"
   },
   {
     path: 'login',
     component: SignInComponent
+    ,pathMatch:"full"
   },
   {
     path: 'register',
-    component: SignUpComponent
+    component: SignUpComponent,
+    pathMatch:"full"
   },
   {
     path: '**',
     redirectTo: 'dashboard'
+    ,pathMatch:"full"
   }
 
 ];

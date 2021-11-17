@@ -8,12 +8,15 @@ import { AppComponent } from './app.component';
 
 import { CovidModule } from './covid/covid.module';
 import { SharedModule } from './shared/shared.module';
-
+import { SignInComponent } from './auth/pages/sign-in/sign-in.component';
+import { FormsModule } from '@angular/forms';
+import { SignUpComponent } from './auth/pages/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,9 @@ import { SharedModule } from './shared/shared.module';
     HttpClientModule,
     AppRoutingModule,
     CovidModule,
-    SharedModule
+    SharedModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
