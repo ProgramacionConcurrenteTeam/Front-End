@@ -6,6 +6,16 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 // Pages
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import {DropdownModule} from "primeng/dropdown";
+
+import {ButtonModule} from 'primeng/button';
+import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
+
 
 
 
@@ -15,7 +25,11 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
   ],
   imports: [
     CommonModule,
-    PrimeNgModule
+    PrimeNgModule,
+    DropdownModule,
+    BrowserModule,
+    FormsModule,BrowserAnimationsModule,ButtonModule
+
   ],
   exports: [
     DashboardComponent

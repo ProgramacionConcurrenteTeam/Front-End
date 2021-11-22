@@ -12,6 +12,7 @@ import { SignInComponent } from './auth/pages/sign-in/sign-in.component';
 import { FormsModule } from '@angular/forms';
 import { SignUpComponent } from './auth/pages/sign-up/sign-up.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { SignUpComponent } from './auth/pages/sign-up/sign-up.component';
     CovidModule,
     SharedModule,
     FormsModule
+
 
   ],
   providers: [],

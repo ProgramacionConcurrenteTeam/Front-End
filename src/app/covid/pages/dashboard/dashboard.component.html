@@ -1,1 +1,11 @@
-<p>dashboard works!</p>
+<h5>Fiebre</h5>
+<p-dropdown [options]="fiebre" [(ngModel)]="selectedS1" placeholder="Select a response" optionLabel="name"
+            ></p-dropdown>
+<h5>Dificultad Respiratoria</h5>
+<p-dropdown [options]="respiratoria" [(ngModel)]="selectedS2" placeholder="Select a response" optionLabel="name"
+            ></p-dropdown>
+<h5>Sospechoso de Covid</h5>
+<p-dropdown [options]="sospechoso" [(ngModel)]="selectedS3" placeholder="Select a response" optionLabel="name"
+            ></p-dropdown>
+
+<p-button label="Enviar" ></p-button>
