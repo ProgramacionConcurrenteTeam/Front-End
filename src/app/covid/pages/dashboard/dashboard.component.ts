@@ -51,6 +51,8 @@ export class DashboardComponent implements OnInit {
     this.httpDataService.getResult().subscribe((response: any) => {
       this.resultado = response.body;
     });
+
+    this.resultado = "Si soy sospechoso de Covid";
   }
 
 }
