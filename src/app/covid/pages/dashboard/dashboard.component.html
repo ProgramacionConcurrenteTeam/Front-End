@@ -8,6 +8,6 @@
 <p-dropdown [options]="sospechoso" [(ngModel)]="selectedS3" placeholder="Select a response" optionLabel="name"
             ></p-dropdown>
 
-<p-button label="Enviar" ></p-button>
+<p-button label="Enviar" (onClick)="getResult()" ></p-button>
 <h5 >Resultado</h5>
 <h4>{{resultado}}</h4>

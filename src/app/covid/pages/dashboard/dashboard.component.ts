@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HttpAPIService } from 'src/app/services/api-service';
 
 interface Sintoma {
   name: string,
@@ -19,12 +19,12 @@ export class DashboardComponent implements OnInit {
   selectedS1?: Sintoma;
 
   selectedS3?: Sintoma;
-  resultado:string= "positivo";
+  resultado:string= '';
   selectedS2?: Sintoma;
 
 
 
-  constructor() {
+  constructor(private httpDataService: HttpAPIService) {
 
 
     this.fiebre = [
@@ -45,6 +45,12 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  getResult(): void {
+    this.httpDataService.getResult().subscribe((response: any) => {
+      this.resultado = response.body;
+    });
   }
 
 }
