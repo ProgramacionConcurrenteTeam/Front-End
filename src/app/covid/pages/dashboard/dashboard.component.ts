@@ -9,8 +9,8 @@ interface Sintoma {
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styles: [`
-  `]
+  styleUrls: ["./dashboard.component.css"
+  ]
 })
 export class DashboardComponent implements OnInit {
   fiebre: Sintoma[];
@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
   selectedS1?: Sintoma;
 
   selectedS3?: Sintoma;
-
+  resultado:string= "positivo";
   selectedS2?: Sintoma;
 
 

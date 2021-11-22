@@ -14,7 +14,7 @@ import {FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
-
+import {InputTextareaModule} from 'primeng/inputtextarea';
 
 
 
@@ -28,7 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PrimeNgModule,
     DropdownModule,
     BrowserModule,
-    FormsModule,BrowserAnimationsModule,ButtonModule
+    FormsModule,BrowserAnimationsModule,ButtonModule,InputTextareaModule
 
   ],
   exports: [
